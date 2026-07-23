@@ -39,7 +39,7 @@ An infernal strategist-devil bound to its command throne — clever, seductive, 
 
 ### Renzo Calvi — the surviving cutter *(information)*
 *Name: Italian/Latin — "Renzo" (short for Lorenzo).*
-- **Role:** Quarry cutter who fled the breach; found playing dead under the cart (Scene 2) or bound in the bunkhouse (Scene 3). The party's eyewitness to the disaster.
+- **Role:** Quarry cutter who fled the breach — the only man to make it out of the mine; found playing dead under the overturned cart on the Ridge Road (Scene 2). The party's eyewitness to the disaster.
 - **Wants:** To get down the ridge and never come back — and, if shamed or steadied, to not have abandoned the men still below.
 - **Secret:** He heard the Provost's first orders and *ran while the others were taken*; he can describe the war-room, the reanimated dead, and Donato being marched to the throne. He'll downplay his own flight unless pressed gently.
 - **Voice:** *"They didn't die, that's the thing — it kept them. It called them by rank. It called Donato 'adjutant.'"*
@@ -47,9 +47,9 @@ An infernal strategist-devil bound to its command throne — clever, seductive, 
 
 ### Ssvara, "Little-Ash" — the dissident kobold *(ally / guide)*
 *Name: Draconic — "Ssvara" (a hiss-and-ember sound); "Little-Ash" is the clutch-nickname in trade-common.*
-- **Role:** Leads a frightened clutch that no longer wants to obey the voice in the stone; a potential guide to the conduit gallery's back way and a wave-cutting ally in Scene 6.
+- **Role:** Leads a frightened clutch that no longer wants to obey the voice in the stone; the party's source for the devil's key weakness and a wave-cutting ally in the Muster (Scene 7), met in the parley of Scene 6.
 - **Wants:** To get her clutch's hatchlings *out* of the diggings before the "god-general" spends them all on its muster.
-- **Secret:** Her clutch has served the broadcast orders for generations as a garrison-cult; she is the first to doubt, and terrified her own kind will call her a traitor. She knows the ward-line the sentinels won't cross and the murder-hole layout.
+- **Secret:** Her clutch has served the broadcast orders for generations as a garrison-cult; she is the first to doubt, and terrified her own kind will call her a traitor. She knows the ward-line the sentinels won't cross, the murder-hole layout, and the secret the doubters live by: **the Voice weakens with distance and dies at the surface.**
 - **Voice:** *"The Voice is not a god. Gods do not run out of soldiers. It is running out of us."*
 - **Visual:** Small, soot-dark scales scarred pale along the spine, a filed-down Turathi bronze chit worn as a charm she's ashamed of; watches exits, never corners. **Casting (voice):** a whispery, quick Andy Serkis register; or Kathryn Hahn for dry nerve.
 
@@ -59,7 +59,7 @@ An infernal strategist-devil bound to its command throne — clever, seductive, 
 
 ## Scenes
 
-*Loose sequence: 1 is the hook, 2–4 are the approach and delve, 5–7 are the bunker. Six combats total (Scenes 2, 3, 4, 5, 6, 7). Encounter budget for four 3rd-level PCs: a standard fight ≈ 4 points, where CR ½ = 1 pt, CR 1 = 2, CR 2 = 4, CR 3 = 6; kobolds (CR 1/8) = 0.2 each.*
+*Loose sequence: 1 is the hook, 2–4 the approach and delve, 5–8 the bunker. Six combats (Scenes 2, 3, 4, 5, 7, 8); Scene 6 is a social breather. Encounter budget for four 3rd-level PCs: a standard fight ≈ 4 points, where CR ½ = 1 pt, CR 1 = 2, CR 2 = 4, CR 3 = 6; kobolds (CR 1/8) = 0.2 each.*
 
 ### 1. Fallcrest — The Cartage Yard *(hook, no combat)*
 - **Purpose:** Hire the party, plant both clocks, let them gear up. Establish that the quarrymaster is missing and the guard won't act.
@@ -73,9 +73,9 @@ An infernal strategist-devil bound to its command throne — clever, seductive, 
 - **Purpose:** Teach terrain and telegraph the theme: *these are not normal kobolds.* Easy, winnable fight that establishes the enemy fights **drilled** — volleys, cover, orderly retreat.
 - **Setting:** Switchback trail up Gray Ridge at dusk; loose scree, a timber flume, boulders good for cover on both sides. A cutter's abandoned handcart lies overturned across the path.
 - **At stake:** Get up the ridge; take a prisoner or let one flee (a fleeing kobold *reports*, so Scene 3 is forewarned and better-organized).
-- **Encounter:** **10 kobolds** (≈2 pts, deliberately easy). They fight in two ranks — front throws slings, rear retreats to reload — and disengage in order rather than dying to the last. One wears a scrap of Turathi bronze as a "rank badge."
-- **Ways in / ways out:** Arrive on foot/mule up the trail. Out: over the crest into the open works (Scene 3). A captured kobold can be interrogated (fear or kindness) — seeds the dissident-clutch thread.
-- **Complications:** A rockslide trap rigged at the flume (DC 13 Perception to spot; DC 13 Dex save, 2d10 bludgeoning, prone). The overturned cart hides a wounded, terrified cutter playing dead.
+- **Encounter:** **10 kobolds** (≈2 pts, deliberately easy). They fight to a *badly-remembered* Turathi drill — front rank slings, rear rank reloads — and bark clipped Infernal parade-commands they only half-understand (*"Hold! Volley! Re-form!"*), disengaging in order rather than dying to the last. One wears a scrap of Turathi bronze as a rank-badge. **Clue:** this is real military doctrine, poorly copied — something *trained* them, and they answer to a "Voice."
+- **Ways in / ways out:** Arrive on foot/mule up the trail. Out: over the crest into the open works (Scene 3). A kobold **spared or captured** (rather than beaten for answers) hisses one line before it bolts — *"Not all the clutch loves the Voice"* — and carries a **filed-down bronze chit**, the defectors' shame-mark; a party that kills everything still finds the chit on a body. Seeds the dissident payoff (Scene 6).
+- **Complications:** A rockslide trap rigged at the flume (DC 13 Perception to spot; DC 13 Dex save, 2d10 bludgeoning, prone). The overturned cart hides **Renzo Calvi**, a wounded cutter playing dead — the only man to make it out of the mine.
 - **Sensory:** Sling-stones cracking off marble; the drilled, wordless whistle-signals the kobolds use; cold pine wind off the heights.
 
 ### 3. Gray Ridge Open Works *(combat 2 — standard)*
@@ -84,7 +84,7 @@ An infernal strategist-devil bound to its command throne — clever, seductive, 
 - **At stake:** Take the pithead without the kobolds collapsing the gallery mouth (trapping the cutters below) or torching the office (which holds the quarrymaster's dig-journal — the map to the breach).
 - **Encounter:** **1 Kobold Trapsmith (CR 1)** directing **10 kobolds** (≈4 pts, standard). The trapsmith fights to rig the gallery props to collapse — a *objective clock*: 3 rounds to stop it (destroy the charge, or drop the trapsmith). Multi-level terrain: benches give high ground and cover; crane counterweights can be cut loose (DC 13) to sweep a bench.
 - **Ways in / ways out:** From the crest (Scene 2). Out: down the Deep Gallery (Scene 4). The office journal or a rescued cutter points the way and warns of "the door that isn't marble."
-- **Complications:** A survivor cutter is bound in the bunkhouse as a "prisoner of war" — the kobolds are keeping captives, not eating them (the Provost's standing orders). The rival salvage crew arrives mid-fight and must be dealt with — competitors or forced allies.
+- **Complications:** A hidden **hatchling-nest** is tucked in the spoil-heaps behind the bunkhouse — eggs and a few terrified brood-tenders the muster was never told about, kept *outside the mine* where the Voice is weakest. The kobolds here fight *away* from it, trying not to draw its notice (a watchful party sees they're covering something). Smashing the nest sours the Scene 6 parley; sparing or guarding it earns a bonus. The rival salvage crew may also arrive mid-fight — competitors or forced allies.
 - **Sensory:** White marble dust over everything like old snow; the groan of an off-balance crane; a captive's muffled shouting from the bunkhouse.
 
 ### 4. The Deep Gallery & The Breach *(combat 3 — standard, first contact with the war-machinery)*
@@ -93,7 +93,7 @@ An infernal strategist-devil bound to its command throne — clever, seductive, 
 - **At stake:** Cross the breach. The ward can be triggered (alarm — wakes Scene 5's garrison early) or bypassed (DC 14 Arcana/Thieves' Tools). The Provost's voice first reaches them here — calm, clipped, *wrong*: *"Sentries. Identify. You are late for the muster."*
 - **Encounter:** **2 infernal bronze sentinels** (reskinned **Animated Armor, CR 1 each ≈4 pts**, standard) — helmed suits of Turathi bronze that snap from parade-rest and challenge before attacking. They fight to standing orders: hold the threshold, do not pursue past the ward-line (exploitable).
 - **Ways in / ways out:** From the pit (Scene 3). Out: into the bunker proper — the War-Room (Scene 5).
-- **Complications:** The conduit-veins pulse brighter each round the party lingers (visual of the devil "waking further"). A dissident kobold, hiding from the sentinels, can be found here and turned into a guide if handled gently.
+- **Complications:** The conduit-veins pulse brighter each round the party lingers (visual of the devil "waking further"). A lone kobold cowers away from the sentinels and slips off deeper the instant it's seen — a glimpse of the doubters, not yet a parley (that comes in Scene 6).
 - **Sensory:** Heat rising from below like an oven cracked open; the smell of hot bronze and old ash; the sentinels' voices in unison, centuries stale, speaking Infernal.
 
 ### 5. The War-Room *(combat 4 — moderate + heavy RP)*
@@ -101,20 +101,32 @@ An infernal strategist-devil bound to its command throne — clever, seductive, 
 - **Setting:** A long vaulted hall around a great **cast-bronze relief map** of the Nentir Vale as it was in the war — pinned with markers for legions centuries dead, some pins moved *recently.* Walls of standing-orders etched in Infernal; murder-holes above; side passages to holding cells and the conduit gallery. The Provost's voice owns this room.
 - **At stake:** How the party is *classified.* The Provost runs them through an interrogation-by-radio: are they reinforcements (conscript them — orders, a "sector to hold") or infiltrators (the garrison attacks)? Cutters are held in the cells; some dead ones have been reanimated as labor and shuffle in the dark.
 - **Encounter:** **6 reanimated cutters (Zombie, CR 1/4 ≈3 pts)** at labor, plus **2 kobold overseers** — a moderate fight that ignites *if* the party is classified hostile or frees the prisoners. Terrain: the map-table is cover and high ground; murder-holes let unseen kobolds throw stones (the Provost "calling fire").
-- **Ways in / ways out:** From the breach (Scene 4). Branches: (a) play along as "reinforcements" and be *ordered* toward the throne (walk in as guests); (b) fight through; (c) ally with the dissident kobolds, who know a back way to the conduit gallery and the throne. Out: the Muster (Scene 6) or, if talking, straight to the Throne (Scene 7).
+- **Ways in / ways out:** From the breach (Scene 4). Branches: (a) play along as "reinforcements" and be *ordered* toward the throne (walk in as guests); (b) fight through; (c) break for the side-tunnels to seek the doubting clutch (Scene 6) before the assault. Out: the Doubting Clutch (Scene 6), the Muster (Scene 7), or — if they've talked their way through as "reinforcements" — marched straight toward the Throne (Scene 8).
 - **Complications:** The map reveals the Provost's target: a marker labeled in Infernal sits exactly where **Fallcrest** stands. A freed cutter recognizes the quarrymaster's coat among the "adjutant's" effects — first hint the father is *at the throne, and changing.*
 - **Sensory:** The dead-air reek of a room sealed for centuries; the scrape of reanimated cutters dragging ore; the Provost's voice everywhere and nowhere, unhurried, certain.
 
-### 6. The Muster *(combat 5 — hard set-piece with an objective clock)*
+### 6. The Doubting Clutch *(social — no combat; the dissident payoff)*
+- **Purpose:** Cash in the kobold seeds; hand the party the *key clue* for beating the devil; optionally recruit aid for the Muster. A breather between the War-Room and the assault.
+- **Setting:** A **conduit-dead pocket** — a side-gallery where the infernal circuitry is broken and the Voice fades to static. That is *why* the dissidents gather here: it is the one spot inside the works the Voice cannot fully compel them. Ssvara's clutch shelters here; their eggs are stashed safer still, up in the open works *outside the mine*, because the doubters have learned the Voice weakens with distance and dies at the surface.
+- **At stake:** Trust — whether Ssvara helps, and how much. **Open gate:** any party can earn her aid through good roleplay in the moment; there is no hard lock. But prior conduct sets her starting attitude — mercy to kobolds and sparing the hatchling-nest start her *helpful*; a genocidal path starts her *terrified and hostile*, and she'll demand the party first swear and *prove* safe passage for the hatchlings before she gives anything.
+- **What she gives (scaled to trust):**
+  - **The key weakness (always, if they parley at all):** *the Voice weakens with distance from the throne and dies outside the mine; the conduit carries its command.* This is how you win — **cut the conduit, or get Donato out of the works,** and the devil's hold breaks.
+  - **Intel (helpful attitude):** the throne-room layout, the murder-hole and ward-line map, where the conduit can be cut in the Muster (Scene 7), and the truth about Donato — *"the Voice wears your quarrymaster now; it calls him its commander."*
+  - **Aid in the Muster (trust earned):** her clutch opens a blast-door and cuts one wave, or stages a distraction (subtract a wave from Scene 7).
+- **Ways in / ways out:** Sought after the War-Room (Scene 5), once the party grasps what the Voice is; the captured chit (Scene 2) or a freed captive points the way. Out: the Muster (Scene 7), now forewarned — or, if the party promised it, a detour to walk the hatchlings up to the surface first.
+- **Complications:** A loyalist kobold overhears and bolts to report — a chase to silence it, or the Muster comes at full alert. Ssvara's own nerve can crack: if the party is cold or threatening, she may betray them to prove her loyalty to the clutch.
+- **Sensory:** The Voice guttering to static in the dead pocket; the dry rustle of frightened kobolds; a faint draft of *outside air* telling everyone the surface — and safety — is close.
+
+### 7. The Muster *(combat 5 — hard set-piece with an objective clock)*
 - **Purpose:** The penultimate crescendo. The Provost commits its garrison to stop the party reaching the throne before it finishes converting its adjutant.
 - **Setting:** The **conduit gallery** — a rising corridor of glowing infernal circuitry linking War-Room to Throne, chokepoints at two blast-doors, a central junction where the conduit can be *cut* (DC 14 tools/Arcana; cutting it staggers the Provost in Scene 7 and blocks the free-it ending).
 - **At stake:** *Reach the throne / cut the conduit before the clock runs out.* Run it as a moving objective: waves arrive each round from side-hatches; standing in one place invites a "concentrated fire" order.
 - **Encounter:** **1 Kobold Alchemist (CR 2)** as field-officer + **8 kobolds** in relays (≈5.5 pts, hard). Not a stand-and-die fight — an assault against a timer. If the party allied with the dissidents, subtract a wave; the dissidents open a blast-door.
-- **Ways in / ways out:** From the War-Room (Scene 5). Out: the Command Throne (Scene 7). Cutting the conduit here changes how Scene 7 opens.
+- **Ways in / ways out:** From the Doubting Clutch (Scene 6) or straight from the War-Room (Scene 5). Out: the Command Throne (Scene 8). Cutting the conduit here changes how Scene 8 opens.
 - **Complications:** A blast-door slams and splits the party for a round (teach cross-fire). The Provost narrates the whole assault like a commander on a radio, praising "good order" even as its troops die.
 - **Sensory:** Red conduit-light strobing; the whistle-signals again, now frantic; ozone and cooking dust; the floor trembling as blast-doors drop.
 
-### 7. The Command Throne *(combat 6 — finale; con / fight / free-it all supported)*
+### 8. The Command Throne *(combat 6 — finale; con / fight / free-it all supported)*
 - **Purpose:** Resolve the war. Three real paths, each mechanically supported.
 - **Setting:** A domed command chamber; the Provost fused to a **bronze command-throne** grown into the living stone, ringed by a lower map-pit of the whole front. Beside it stands the **quarrymaster**, half-converted — pallid, brass-eyed, echoing the Provost's cadence, still fighting it underneath. Conduit-veins feed the throne from every wall.
 - **At stake:** The Provost's fate, the father's soul, and whether the thing ever reaches Fallcrest.
@@ -122,16 +134,16 @@ An infernal strategist-devil bound to its command throne — clever, seductive, 
   - **CON (intended clever win).** Convince the Provost the war is over / feed it a valid stand-down. It is lucid on procedure and insane on reality — so it won't accept "you lost"; it *will* accept a correctly-formed order. Winning play: produce authority (the dig-journal, Turathi bronze, a forged cease-fire in Infernal — DC 15 Deception/Forgery), use correct protocol, and give it the one thing it has waited centuries for: **relief from duty.** Social skill challenge — **3 successes before 2 failures** on DC 13–15 (History/Persuasion/Deception/Arcana; advantage for using real Turathi tokens). Success: it stands down, releases the father, powers the bunker to sleep. Failure: it brands them infiltrators — roll to FIGHT with the garrison already engaged.
   - **FIGHT (heroic win).** The Provost is **anchored** (can't leave the throne) — spec ~CR 3–4: multiattack glaive/beard reskin, **command aura** (one ally reaction-attack/round), **hellish rebuke**, and once/fight *call the reserve* (2 lemures / 2 kobolds rise from the map-pit). Throne-room hazards: conduit-arcs (DC 13 Dex, 2d6 fire in marked squares), and the **half-converted father** acts on the Provost's initiative unless freed. **Breaking the father free** (grapple + DC 13 Wis save aid, or reduce Provost's control) removes the devil's action-economy edge — the mechanical reward for caring about the rescue. Destroying the throne-conduit (from Scene 6 or here) halves the Provost's HP and ends its *call the reserve.*
   - **FREE-IT (the trap).** The Provost promises the father's release, treasure, "safe passage" if the party relinks its supply line (repair the conduit / carry its "orders" to the surface). Doing so wins the fight instantly and *loses the adventure*: the Provost marches on Fallcrest with the party as its unwitting vanguard. Reserve this as a consequence, not a gotcha — telegraph the cost.
-- **Ways in / ways out:** From the Muster (Scene 6) or straight from the War-Room if the party talked its way in. Out: father saved and bunker re-sealed (best), Provost destroyed (good), or Provost freed (dark — sequel hook).
+- **Ways in / ways out:** From the Muster (Scene 7) or straight from the War-Room if the party talked its way in. Out: father saved and bunker re-sealed (best), Provost destroyed (good), or Provost freed (dark — sequel hook).
 - **Complications:** The father lucid for one round, begging them to *end him* if they can't free him. The rival salvage crew arrives to loot mid-finale and can be conned by the Provost too.
 - **Sensory:** The throne's bronze skin sweating heat; the father's voice sliding between his own and the devil's; the map-pit lighting up with the ghost-order of a battle four centuries lost.
 
 ## GM Notes
 
-- **The nightly clock:** Track nights since the breach. **Night 1–2:** kobolds only; sentinels dormant; Provost's voice faint. **Night 3–4 (default start):** sentinels active, war-room manned, father captured. **Night 5+:** conduit near-relinked, father nearly converted, garrison at full alert (add a wave to Scene 6, the father fights at full strength in Scene 7). Reward speed; punish dithering without hard-railroading.
+- **The nightly clock:** Track nights since the breach. **Night 1–2:** kobolds only; sentinels dormant; Provost's voice faint. **Night 3–4 (default start):** sentinels active, war-room manned, father captured. **Night 5+:** conduit near-relinked, father nearly converted, garrison at full alert (add a wave to Scene 7, the father fights at full strength in Scene 8). Reward speed; punish dithering without hard-railroading.
 - **Talking to the boss:** The Provost is a *conversation*, not just a statblock. Lucid on procedure, insane on reality. Play it as a competent officer receiving a field report — it will not accept "you lost," only a *correctly-formed order.* That gap is the whole finale.
-- **Difficulty dials:** Softer — fewer kobolds per wave (Scenes 3/6), skip the Scene 2 trap, sentinels don't call for help. Harder — start on Night 5, the rival crew sides with the Provost, add 2 lemures to the throne room.
-- **Encounter budget (four 3rd-level PCs; standard ≈ 4 pts):** S2 ~2 pts (easy), S3 ~4 (standard), S4 ~4 (standard), S5 ~3 (moderate, conditional), S6 ~5.5 (hard), S7 boss ~CR 3–4 anchored (deadly, winnable). Roughly 6 fights, one long session or two short ones.
+- **Difficulty dials:** Softer — fewer kobolds per wave (Scenes 3/7), skip the Scene 2 trap, sentinels don't call for help. Harder — start on Night 5, the rival crew sides with the Provost, add 2 lemures to the throne room.
+- **Encounter budget (four 3rd-level PCs; standard ≈ 4 pts):** S2 ~2 pts (easy), S3 ~4 (standard), S4 ~4 (standard), S5 ~3 (moderate, conditional), S6 social (no combat), S7 ~5.5 (hard), S8 boss ~CR 3–4 anchored (deadly, winnable). Roughly 6 fights, one long session or two short ones.
 - **Safety tools:** Body-horror in the father's conversion and the reanimated cutters — flag lines/veils in Session 0; the conversion can be dialed to "enthralled, not transformed" if needed.
 
 ## Open Threads
