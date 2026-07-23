@@ -81,8 +81,6 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 - **Voice:** *"The Voice is not a god. Gods do not run out of soldiers. It is running out of us."*
 - **Visual:** Small, soot-dark scales scarred pale along the spine, a filed-down Turathi bronze chit worn as a charm she's ashamed of; watches exits, never corners. **Casting (voice):** a whispery, quick Andy Serkis register; or Kathryn Hahn for dry nerve.
 
-<!-- Minor / to develop if wanted: Ludo Farsetti, leader of the rival salvage crew (Romance name); default disposition is greedy competitor who can be flipped to ally or conned by the Haruspex. -->
-
 <!-- Lead NPCs above are the five the adventure can't run without; add minor townsfolk/patrons as the table needs. -->
 
 ## Scenes
@@ -94,7 +92,7 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 - **Setting:** A muddy cartage yard under the Upper Quays — draft mules, stacked timber, a cramped office smelling of axle-grease and wet straw. The daughter runs it; she's holding it together on nerve. Late afternoon; a courier's just brought a fled cutter's garbled account.
 - **At stake:** Whether the party takes the job, and on what terms. She **opens hard** — 50 gp now and *half* the vault, keeping the rest ("it's my family's quarry") — but it's a bluff; the moment they look ready to walk she folds to "all of it, just bring him back" (full deal and the aftermath that hard bargaining earns are in her NPC entry). She knows: carts stopped four days ago; a fled cutter raved about "kobolds that march" and "a voice in the stone"; her father's last note said he'd broken into "something big and old" that would set them right — but not *what*; he went up two nights ago and hasn't returned.
 - **Ways in / ways out:** They arrive by referral (posted notice, a mutual contact, or a tavern tip). Out: straight to the Ridge Road, or an hour asking around Fallcrest first — an old quarryman or a Fallcrest sage (DC 12 History) recalls the Moon Hills hold "Turathi work" beneath them, sealed for good reason.
-- **Complications:** A rival salvage crew overhears and races them to the vault (recurring pressure). The daughter wants to come along (liability, or a stubborn ally).
+- **Complications:** The daughter wants to come along (liability, or a stubborn ally).
 - **Sensory:** Rain ticking on a tin roof; the daughter's ink-stained hands; a mule screaming somewhere in the dark.
 
 ### 2. The Ridge Road *(warm-up fight)*
@@ -112,7 +110,7 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 - **At stake:** Take the pithead without the kobolds collapsing the gallery mouth (trapping the cutters below) or torching the office (which holds the quarrymaster's dig-journal — the map to the breach).
 - **Encounter:** **1 Kobold Trapsmith (CR 1)** directing **10 kobolds** (≈4 pts, standard). The trapsmith fights to rig the gallery props to collapse — a *objective clock*: 3 rounds to stop it (destroy the charge, or drop the trapsmith). Multi-level terrain: benches give high ground and cover; crane counterweights can be cut loose (DC 13) to sweep a bench.
 - **Ways in / ways out:** From the crest (Scene 2). Out: down the Deep Gallery (Scene 4). The office journal or a rescued cutter points the way and warns of "the door that isn't marble."
-- **Complications:** A hidden **hatchling-nest** is tucked in the spoil-heaps behind the bunkhouse — eggs and a few terrified brood-tenders the muster was never told about, kept *outside the mine* where the Voice is weakest. The kobolds here fight *away* from it, trying not to draw its notice (a watchful party sees they're covering something). Smashing the nest sours the Scene 6 parley; sparing or guarding it earns a bonus. The rival salvage crew may also arrive mid-fight — competitors or forced allies.
+- **Complications:** A hidden **hatchling-nest** is tucked in the spoil-heaps behind the bunkhouse — eggs and a few terrified brood-tenders the muster was never told about, kept *outside the mine* where the Voice is weakest. The kobolds here fight *away* from it, trying not to draw its notice (a watchful party sees they're covering something). Smashing the nest sours the Scene 6 parley; sparing or guarding it earns a bonus.
 - **Sensory:** White marble dust over everything like old snow; the groan of an off-balance crane; the skittering of kobolds you can't quite see among the benches.
 
 ### 4. The Deep Gallery & The Breach *(first contact with the Lictor — terror/gate, not a kill-fight)*
@@ -173,7 +171,7 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
   - **FIGHT (heroic win).** The Haruspex is **anchored** (can't leave the throne) — spec ~CR 3–4: multiattack glaive/beard reskin, **standing-orders aura** (one ally reaction-attack/round), **hellish rebuke**, and once/fight *call the reserve* (2 lemures / 2 kobolds rise from the map-pit). Throne-room hazards: conduit-arcs (DC 13 Dex, 2d6 fire in marked squares), and the **half-made Centurion (Donato)** acts on the Haruspex's initiative unless freed. **Breaking Donato free** (grapple + DC 13 Wis save aid, or reduce the Haruspex's control) removes the devil's action-economy edge — the mechanical reward for caring about the rescue. Destroying the throne-conduit (from Scene 7 or here) halves the Haruspex's HP and ends its *call the reserve.*
   - **FREE-IT (the trap).** The Haruspex promises the father's release, treasure, "safe passage" if the party relinks its supply line (repair the conduit / carry its "orders" to the surface). Doing so wins the fight instantly and *loses the adventure*: the Haruspex marches on Fallcrest with the party as its unwitting vanguard. Reserve this as a consequence, not a gotcha — telegraph the cost.
 - **Ways in / ways out:** From the Muster (Scene 7) or straight from the War-Room if the party talked its way in. Out: father saved and bunker re-sealed (best), Haruspex destroyed (good), or Haruspex freed (dark — sequel hook).
-- **Complications:** The father lucid for one round, begging them to *end him* if they can't free him. The rival salvage crew arrives to loot mid-finale and can be conned by the Haruspex too.
+- **Complications:** The father lucid for one round, begging them to *end him* if they can't free him.
 - **Sensory:** The throne's bronze skin sweating heat; the father's voice sliding between his own and the devil's; the map-pit lighting up with the ghost-order of a battle four centuries lost.
 
 ## GM Notes
@@ -191,7 +189,7 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 | 5 | **The weakness:** the Voice rides the conduit — it weakens with distance and **dies at the surface**; its assets fail where it can't reach. | The Lictor won't cross the ward-line + veins pulse (S4); the dead pocket where the Voice guts to static (S6); Ssvara says it plainly (S6). |
 | 6 | **The peaceful end:** it obeys command authority and craves **relief from duty**; a correct stand-down (forged superior, or Donato ordering it) shuts it down. | The interrogation + standing-orders wall (S5); Ssvara / the Centurion truth (S6); synthesized at the throne (S8). |
 
-- **Difficulty dials:** Softer — the Lictor withdraws at a higher HP threshold and gets an extra telegraphed out, fewer kobolds in Scene 3, skip the Scene 2 trap. Harder — a *second*, half-functional Lictor; start on Night 5; the rival crew sides with the devil; add 2 lemures to the throne room.
+- **Difficulty dials:** Softer — the Lictor withdraws at a higher HP threshold and gets an extra telegraphed out, fewer kobolds in Scene 3, skip the Scene 2 trap. Harder — a *second*, half-functional Lictor; start on Night 5; add 2 lemures to the throne room.
 - **Encounter budget (four 3rd-level PCs; standard ≈ 4 pts):** S2 ~2 pts (easy), S3 ~4 (standard), S4 the Lictor gate (terror/puzzle — not an XP kill), S5 ~3 (moderate, conditional), S6 social (no combat), S7 the Lictor climax (puzzle under pressure + thin screen), S8 boss ~CR 3–4 anchored (deadly, winnable). Kobold swarms now live only in S2–S3; S4/S7 are the Lictor, S5 the dead — deliberate variety.
 - **Safety tools:** Body-horror in the father's conversion and the reanimated cutters — flag lines/veils in Session 0; the conversion can be dialed to "enthralled, not transformed" if needed.
 
@@ -224,5 +222,4 @@ The "something big and old" Donato found. It sits in a strongroom off the throne
 
 - Write the Haruspex's full statblock in your target ruleset (the stand-down protocol it must satisfy is done — see GM Notes).
 - Develop the sequel hook — the dispatch-cylinder points to a superior still unrelieved and a *second* Bael Turath command-post elsewhere in the Vale.
-- Flesh Ludo Farsetti and the rival salvage crew if they'll recur — stat their default encounter and their flip-to-ally / flip-to-Haruspex triggers.
 - Optional maps: the open works (Scene 3) and the bunker (Scenes 5–8) would benefit from simple tactical sketches.
