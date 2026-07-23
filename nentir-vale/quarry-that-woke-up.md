@@ -29,9 +29,15 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 ### Serica Aldabri — the daughter *(hook)*
 *Name: Italian/Latin — "Serica" (silk) over the family surname Aldabri.*
 - **Role:** Runs the Aldabri cartage yard in Fallcrest; the one person who will pay to get her father back when the guard won't move.
-- **Wants:** Her father home alive — and, underneath, to be taken seriously as the one holding the family business together while he chases played-out seams.
-- **Secret:** She knows the Gray Ridge lease is nearly bankrupt; her father drove the deep gallery as a desperate gamble she *told him not to take*. Guilt drives her generosity. She has a copy of his dig-journal she'll only surrender if she trusts the party.
-- **Voice:** *"I don't need sympathy, I need him back. Name your price and don't pad it — I'll know."*
+- **Wants:** Her father home alive — first, last, and under everything. Beneath that, to keep the family business off the rocks and to be taken seriously as the one holding it together while he chases played-out seams.
+- **Knows:** Her father's last note said he'd broken into "something big — something *old*" that would "set them right," but never *what.* She holds his dig-journal (the map to the breach) and hands it over only once she trusts the party.
+- **Secret:** The Gray Ridge lease is all but bankrupt; the deep gallery was a desperate gamble she *told him not to take.* She needs the vault as badly as she needs him — which is why she bargains hard even while she's terrified.
+- **How she deals:** She **opens hard** — 50 gp up front and *half* of whatever's in the vault, keeping the rest ("it's my family's quarry"). It's a bluff from a broke, frightened woman: **threaten to walk and she folds fast**, climbing to "take all of it — just bring him back," and promising more if pushed.
+- **Aftermath (how she remembers the party):**
+  - **Father alive →** overjoyed; pays in full and then some, and becomes a genuine ally in Fallcrest.
+  - **Father dead, honest dealing (they keep ~half the vault) →** grief without a grudge; she knows it was a brutal job.
+  - **Father dead *and* a hard/greedy bargain (gouged her, stripped the vault) →** grief curdles into a vendetta — the party makes a lasting enemy.
+- **Voice:** Hard open — *"It's my family's quarry. You get half of what's down there, and don't tell me that's not fair."* The fold — *"…Fine. All of it. I don't care about the money, I care about him — just go."*
 - **Visual:** Late 20s, olive-skinned, a sturdy build under a mud-hemmed wool coat; dark hair scraped back, ink and axle-grease to the wrist, a tally-slate always in one hand. Moves fast, sleeps little. **Casting:** Adria Arjona, or Alba Rohrwacher for the weary-competent edge.
 
 ### Donato Aldabri — the quarrymaster *(rescue target / the Haruspex's Centurion)*
@@ -77,7 +83,7 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 ### 1. Fallcrest — The Cartage Yard *(hook, no combat)*
 - **Purpose:** Hire the party, plant both clocks, let them gear up. Establish that the quarrymaster is missing and the guard won't act.
 - **Setting:** A muddy cartage yard under the Upper Quays — draft mules, stacked timber, a cramped office smelling of axle-grease and wet straw. The daughter runs it; she's holding it together on nerve. Late afternoon; a courier's just brought a fled cutter's garbled account.
-- **At stake:** Whether the party takes the job, and how much they learn before they leave. She can pay 50 gp now, 50 on the father's safe return, and a share of the vault. She knows: carts stopped four days ago; a cutter staggered back raving about "kobolds that march" and "a voice in the stone"; her father went up two nights ago and hasn't returned.
+- **At stake:** Whether the party takes the job, and on what terms. She **opens hard** — 50 gp now and *half* the vault, keeping the rest ("it's my family's quarry") — but it's a bluff; the moment they look ready to walk she folds to "all of it, just bring him back" (full deal and the aftermath that hard bargaining earns are in her NPC entry). She knows: carts stopped four days ago; a fled cutter raved about "kobolds that march" and "a voice in the stone"; her father's last note said he'd broken into "something big and old" that would set them right — but not *what*; he went up two nights ago and hasn't returned.
 - **Ways in / ways out:** They arrive by referral (posted notice, a mutual contact, or a tavern tip). Out: straight to the Ridge Road, or an hour asking around Fallcrest first — an old quarryman or a Fallcrest sage (DC 12 History) recalls the Moon Hills hold "Turathi work" beneath them, sealed for good reason.
 - **Complications:** A rival salvage crew overhears and races them to the vault (recurring pressure). The daughter wants to come along (liability, or a stubborn ally).
 - **Sensory:** Rain ticking on a tin roof; the daughter's ink-stained hands; a mule screaming somewhere in the dark.
