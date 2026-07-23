@@ -11,6 +11,15 @@
 ### The Relic (finale, in brief)
 An infernal diviner-counselor bound to the command throne — clever, seductive, tactically astute, and entirely insane. Its name is **Kesovar**; its rank is **Haruspex** (the omen-reader who counsels a commander); the kobolds know it only as **the Voice.** It does not rampage and it cannot truly command — it *counsels,* and *executes the standing orders* of a commander four centuries dead. It will try to conscript the PCs as reinforcements or condemn them as infiltrators, and above all it hungers for a living **commander** to obey. Freeing or "reconnecting" it is the wrong choice: given a commander (or its restored supply line) it marches on Fallcrest. It is **anchored** to the bunker — it fights through garrison and throne-room defenses rather than chasing. Mechanically a bound devil dialed to a deadly-but-winnable solo for a 3rd-level party (~CR 3–4 chassis, e.g. a reskinned Bearded Devil bumped with a **standing-orders aura**, *hellish rebuke*, and the ability to call adds).
 
+### The Voice — how the Haruspex reaches you
+The Haruspex never leaves its throne; it reaches the party through the **conduit** — the veins of dull-red infernal circuitry threaded through every wall. Understanding *how* it reaches is how the party learns to beat it.
+
+- **The Voice in the stone.** Its default: a calm, clipped, courteous military voice that seems to come from the walls themselves, everywhere at once, with no source to attack. This is what the kobolds worship and what Renzo fled. The conduit-veins **pulse brighter when it speaks** — a visible tell that the Voice *is* the conduit.
+- **Through mouths.** It also speaks *through* anything it holds — a kobold snapping suddenly to attention, a labor-corpse pausing to deliver an order in a dead man's voice, and above all the half-made **Centurion (Donato)**, who slides mid-sentence between his own voice and the Haruspex's cadence. The tell: the host goes rigid, a brass sheen in the eyes, the nearest vein flaring.
+- **Its eyes.** It perceives through the conduit and through its assets' senses (kobolds, the dead, the Lictor, Donato). Blind or kill those in a place and it goes **blind there.**
+- **Where it can't reach — the whole key.** The signal **weakens with distance from the throne, fails where the conduit is broken** (the dead pocket, Scene 6), **and dies at the surface.** There the Voice guts to static, its assets falter and lose coordination, and it can neither see nor command. This one fact explains the dissidents' safe pocket, the eggs kept outside, why stealth past the ward-line works, and why the Lictor won't cross it — and it is how to win: **cut the conduit, or get out of its reach.**
+- **What it's really doing.** It *cannot command* — every transmission is it **relaying a dead commander's standing orders** and trying to sort what it hears into that four-centuries-old plan. Play it as an officer on a field radio, endlessly filing reports up a chain with no one at the top.
+
 ### The Order of Battle — how the devil fights
 The Haruspex relays the commander's will through the **conduit-signal** in the walls — but its commander died four centuries ago, so it can only keep executing his last standing orders, never issue new ones. It drives its three forces to a dead man's plan; each differs by *will*, and each does what the others can't. A fight here is never "kill them all" — it's *deny the Haruspex its objective* while the signal drives its assets.
 
@@ -88,7 +97,7 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 - **Complications:** A rival salvage crew overhears and races them to the vault (recurring pressure). The daughter wants to come along (liability, or a stubborn ally).
 - **Sensory:** Rain ticking on a tin roof; the daughter's ink-stained hands; a mule screaming somewhere in the dark.
 
-### 2. The Ridge Road *(combat 1 — warm-up)*
+### 2. The Ridge Road *(warm-up fight)*
 - **Purpose:** Teach terrain and telegraph the theme: *these are not normal kobolds.* Easy, winnable fight that establishes the enemy fights **drilled** — volleys, cover, orderly retreat.
 - **Setting:** Switchback trail up Gray Ridge at dusk; loose scree, a timber flume, boulders good for cover on both sides. A cutter's abandoned handcart lies overturned across the path.
 - **At stake:** Get up the ridge; take a prisoner or let one flee (a fleeing kobold *reports*, so Scene 3 is forewarned and better-organized).
@@ -97,7 +106,7 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 - **Complications:** A rockslide trap rigged at the flume (DC 13 Perception to spot; DC 13 Dex save, 2d10 bludgeoning, prone). The overturned cart hides **Renzo Calvi**, a wounded cutter playing dead — the only man to make it out of the mine.
 - **Sensory:** Sling-stones cracking off marble; the drilled, wordless whistle-signals the kobolds use; cold pine wind off the heights.
 
-### 3. Gray Ridge Open Works *(combat 2 — standard)*
+### 3. Gray Ridge Open Works *(standard fight)*
 - **Purpose:** The surface disaster laid bare; secure the pithead; learn the shape of what happened before descending.
 - **Setting:** A stepped marble pit, two timber gantry cranes leaning at wrong angles, ore-cart rails running to a dark adit in the pit floor — the **Deep Gallery** mouth. A ransacked scale-house/office; a bunkhouse with the doors torn off. The kobolds hold the gallery mouth and the high benches.
 - **At stake:** Take the pithead without the kobolds collapsing the gallery mouth (trapping the cutters below) or torching the office (which holds the quarrymaster's dig-journal — the map to the breach).
@@ -115,14 +124,24 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 - **Complications:** The conduit-veins pulse brighter each round the party lingers. A lone kobold cowers away from the Lictor and slips off deeper the instant it's seen — a glimpse of the doubters (parley in Scene 6). If the captive dies, the party watches the devil raise it on the spot — horror, and proof of the stakes.
 - **Sensory:** Heat rising like an oven cracked open; hot bronze and old ash; the Lictor's dead-silent tread, then the shriek of the man it drags; the devil's voice narrating the execution as routine paperwork.
 
-### 5. The War-Room *(combat 4 — moderate + heavy RP)*
-- **Purpose:** The centerpiece of the *idea* — the party stands inside the decayed mind. The Haruspex "interviews" them. Reveal the reanimated-labor horror and the dissident kobolds. Set up the choice.
-- **Setting:** A long vaulted hall around a great **cast-bronze relief map** of the Nentir Vale as it was in the war — pinned with markers for legions centuries dead, some pins moved *recently.* Walls of standing-orders etched in Infernal; murder-holes above; side passages to holding cells and the conduit gallery. The Haruspex's voice owns this room.
-- **At stake:** How the party is *classified.* The Haruspex runs them through an interrogation-by-radio: are they reinforcements (conscript them — orders, a "sector to hold") or infiltrators (the garrison attacks)? Cutters are held in the cells; some dead ones have been reanimated as labor and shuffle in the dark.
-- **Encounter:** **6 reanimated cutters (Zombie, CR 1/4 ≈3 pts)** — the *strong* dead (dwarves, orcs) hauling bronze and turning the capstan that relinks the conduit — directed by **2 kobold overseers** (kobolds the minds, the dead the muscle). It ignites *if* the party is classified hostile or frees the prisoners. The dead never rout, and can be *ordered into the conduit-arc* to wall off a lane, burning without flinching. Terrain: the map-table is cover and high ground; murder-holes let unseen kobolds throw stones (the devil "calling fire"). **Horror beat:** a PC recognizes a face among the dead — one of Renzo's crew.
-- **Ways in / ways out:** From the breach (Scene 4). Branches: (a) play along as "reinforcements" and be *ordered* toward the throne (walk in as guests); (b) fight through; (c) break for the side-tunnels to seek the doubting clutch (Scene 6) before the assault. Out: the Doubting Clutch (Scene 6), the Muster (Scene 7), or — if they've talked their way through as "reinforcements" — marched straight toward the Throne (Scene 8).
-- **Complications:** The map reveals the Haruspex's target: a marker labeled in Infernal sits exactly where **Fallcrest** stands. A freed cutter recognizes the quarrymaster's coat laid out among the **Centurion's** regalia — first hint the father is *at the throne, and being made into something.*
-- **Sensory:** The dead-air reek of a room sealed for centuries; the scrape of reanimated cutters dragging ore; the Haruspex's voice everywhere and nowhere, unhurried, certain.
+### 5. The War-Room *(the interrogation — clue nexus + conditional fight)*
+- **Purpose:** The centerpiece of the *idea*: the party stands inside the decayed mind and is *processed* by it. The single richest clue-station in the adventure, and the setup for the finale's choice.
+- **Setting:** A long vaulted hall around a great **cast-bronze relief map** of the Nentir Vale as it was in the war — markers for legions centuries dead, some pins moved *recently.* Walls of standing-orders etched in Infernal; murder-holes above; barred holding cells to one side; the conduit gallery rising away at the far end. The Voice owns this room.
+- **The interrogation:** The moment they enter, the Haruspex addresses them through the stone as *sentries reporting late for muster* and runs them through protocol — **identify your unit; report status; give the counter-sign; explain your delay.** Their answers set their **classification:**
+  - **Reinforcements** (play it straight — military bearing, Infernal or Turathi tokens, a plausible unit; the *counter-sign* seals it): conscripted. It assigns them "a sector to hold" and **orders them toward the throne** — they walk deeper as honored guests, no fight.
+  - **Infiltrators** (contradict it, refuse, or fail the counter-sign): condemned — the room turns hostile (labor-dead attack, murder-holes open).
+  - **Unverified** (partial): suspicion — a trick question or a second demand for the counter-sign; one more exchange decides it.
+  - **The counter-sign** is a Bael Turath watchword the party can already have gathered — from **Renzo** (he heard it shouted), a **captured kobold**, or simply **bluffed** (Deception vs. its Insight). Rewards earlier clue-work.
+- **What the room reveals (clue-stations):**
+  - **The war-map** → its mission and target: a marker in Infernal sits exactly on **Fallcrest**, and recently-moved pins show it *is acting now.*
+  - **The standing-orders wall** (read Infernal, DC 14 Arcana/History) → it holds the *Haruspex* rank, its commander is dead, and it **awaits relief from duty by proper authority** — the seed of the peaceful ending.
+  - **The holding cells** → captured cutters: allies and testimony (loud to free, but worth it).
+  - **The labor-dead** → a PC recognizes a face, one of Renzo's crew, and the dead are called by rank (horror).
+  - **The Centurion's regalia** → Donato's coat and tools laid out as a commander's dress — the father is at the throne, being made into something.
+- **Encounter (if hostile):** **6 reanimated cutters (Zombie, CR 1/4 ≈3 pts)** — the *strong* dead (dwarves, orcs), directed by **2 kobold overseers** (kobolds the minds, the dead the muscle). The dead never rout and can be *ordered into the conduit-arc* to wall off a lane, burning without flinching (see Order of Battle). Terrain: the map-table is cover and high ground; murder-holes let unseen kobolds throw stones (the Voice "calling fire").
+- **Ways in / ways out:** From the breach (Scene 4). Branches: (a) pass as reinforcements → *ordered* toward the throne; (b) fight through; (c) slip for the side-tunnels to find the doubting clutch (Scene 6). Out: the Doubting Clutch (Scene 6), the Muster (Scene 7), or — if classified reinforcements — marched straight toward the Throne (Scene 8).
+- **Complications:** If they pass as reinforcements, the Haruspex keeps *testing* them en route (a sudden order to prove obedience). A freed captive may panic and blow their cover.
+- **Sensory:** The dead-air reek of a room sealed for centuries; the scrape of the labor-dead dragging ore; the Voice everywhere and nowhere, unhurried, certain, pausing as if *listening to a commander who never answers.*
 
 ### 6. The Doubting Clutch *(social — no combat; the dissident payoff)*
 - **Purpose:** Cash in the kobold seeds; hand the party the *key clue* for beating the devil; optionally recruit aid for the Muster. A breather between the War-Room and the assault.
@@ -145,7 +164,7 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 - **Complications:** A blast-door slams and splits the party for a round (teach cross-fire). If the party skipped Scene 6 and never learned the fix, let Renzo's half-memory or the pulsing veins hint it — don't let the Lictor become an unsolvable wall. The devil narrates it all like a commander spending his reserves, praising "good order."
 - **Sensory:** Red conduit-light strobing; the Lictor's bronze tread closing in the dark; ozone and cooking dust; the floor trembling as blast-doors drop.
 
-### 8. The Command Throne *(combat 6 — finale; con / fight / free-it all supported)*
+### 8. The Command Throne *(finale; con / fight / free-it all supported)*
 - **Purpose:** Resolve the war. Three real paths, each mechanically supported.
 - **Setting:** A domed command chamber; the Haruspex fused to a **bronze command-throne** grown into the living stone, ringed by a lower map-pit of the whole front. Beside it stands the **quarrymaster**, half-made into the Centurion — pallid, brass-eyed, echoing the Haruspex's cadence, still fighting it underneath. Conduit-veins feed the throne from every wall.
 - **At stake:** The Haruspex's fate, the father's soul, and whether the thing ever reaches Fallcrest.
@@ -161,6 +180,17 @@ The Haruspex relays the commander's will through the **conduit-signal** in the w
 
 - **The nightly clock:** Track nights since the breach. **Night 1–2:** kobolds only; the Lictor dormant; the devil's voice faint. **Night 3–4 (default start):** the Lictor prowls, war-room manned, Donato captured; each night more captured cutters are *processed* into the labor-dead. **Night 5+:** conduit near-relinked, Donato nearly converted (fights at full strength in Scene 8), garrison at full alert. Reward speed; punish dithering without hard-railroading.
 - **Talking to the boss:** The Haruspex is a *conversation*, not just a statblock. Lucid on procedure, insane on reality. Play it as a diviner-counselor relaying a field report to a commander who isn't there — it cannot command or stand down on its own, and will not accept "you lost," only a *correctly-formed order from proper authority* (a forged superior, or Donato freed and commanding). That gap is the whole finale.
+- **Clue spine (what the party can learn, and where).** Each fact is findable in at least two places, so no single miss blocks the finale. Reward attention; don't gate anything behind a lone die roll.
+
+| # | What they can learn | Where to get it |
+|---|---|---|
+| 1 | **The place:** a sealed Bael Turath command bunker; the crew broke into something old and bound. | Fallcrest lore (S1, DC 12); Donato's dig-journal (S3 office); the worked infernal stone at the breach (S4). |
+| 2 | **The Voice:** one intelligence commands the kobolds and the dead; it speaks from the stone and calls its troops by rank. | Drilled kobolds who "answer to a Voice" (S2); Renzo's testimony (S2+); first direct contact (S4). |
+| 3 | **Its nature & target:** a bound infernal counselor re-fighting the War of Ruin; its commander is centuries dead; it means to march on **Fallcrest.** | The war-map + Fallcrest marker (S5); the standing-orders wall (S5, DC 14); the interrogation (S5). |
+| 4 | **Donato:** captured and being made into the "Centurion," the commander it needs — still rescuable. | Renzo saw him marched off and named (S2+); the Centurion's regalia (S5); Ssvara (S6). |
+| 5 | **The weakness:** the Voice rides the conduit — it weakens with distance and **dies at the surface**; its assets fail where it can't reach. | The Lictor won't cross the ward-line + veins pulse (S4); the dead pocket where the Voice guts to static (S6); Ssvara says it plainly (S6). |
+| 6 | **The peaceful end:** it obeys command authority and craves **relief from duty**; a correct stand-down (forged superior, or Donato ordering it) shuts it down. | The interrogation + standing-orders wall (S5); Ssvara / the Centurion truth (S6); synthesized at the throne (S8). |
+
 - **Difficulty dials:** Softer — the Lictor withdraws at a higher HP threshold and gets an extra telegraphed out, fewer kobolds in Scene 3, skip the Scene 2 trap. Harder — a *second*, half-functional Lictor; start on Night 5; the rival crew sides with the devil; add 2 lemures to the throne room.
 - **Encounter budget (four 3rd-level PCs; standard ≈ 4 pts):** S2 ~2 pts (easy), S3 ~4 (standard), S4 the Lictor gate (terror/puzzle — not an XP kill), S5 ~3 (moderate, conditional), S6 social (no combat), S7 the Lictor climax (puzzle under pressure + thin screen), S8 boss ~CR 3–4 anchored (deadly, winnable). Kobold swarms now live only in S2–S3; S4/S7 are the Lictor, S5 the dead — deliberate variety.
 - **Safety tools:** Body-horror in the father's conversion and the reanimated cutters — flag lines/veils in Session 0; the conversion can be dialed to "enthralled, not transformed" if needed.
