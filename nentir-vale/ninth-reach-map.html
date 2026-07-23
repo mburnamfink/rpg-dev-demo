@@ -1,0 +1,489 @@
+<title>The Ninth Reach — Bunker Schematic</title>
+<style>
+  :root{
+    --ground:#15100D; --ground-2:#1C1611; --panel:#211A14; --panel-2:#2A211A;
+    --ink:#E7DDCB; --ink-dim:#A99C86; --hair:#3A2F25;
+    --accent:#E4552E; --accent-deep:#B23016;
+    --bronze:#C69A54; --verdigris:#5E9683; --flood:#4E8AA2; --char:#7C7263;
+    --font-display:"Palatino Linotype","Book Antiqua","URW Palladio L",Palatino,"Iowan Old Style","Hoefler Text",Georgia,serif;
+    --font-body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --ground:#E4E2D7; --ground-2:#DBD9CC; --panel:#F1EFE6; --panel-2:#E7E4D7;
+      --ink:#241E17; --ink-dim:#5E5647; --hair:#CEC8B6;
+      --accent:#B23016; --accent-deep:#8C2410;
+      --bronze:#8A6A2E; --verdigris:#3E7263; --flood:#356F86; --char:#8A8070;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#15100D; --ground-2:#1C1611; --panel:#211A14; --panel-2:#2A211A;
+    --ink:#E7DDCB; --ink-dim:#A99C86; --hair:#3A2F25;
+    --accent:#E4552E; --accent-deep:#B23016;
+    --bronze:#C69A54; --verdigris:#5E9683; --flood:#4E8AA2; --char:#7C7263;
+  }
+  :root[data-theme="light"]{
+    --ground:#E4E2D7; --ground-2:#DBD9CC; --panel:#F1EFE6; --panel-2:#E7E4D7;
+    --ink:#241E17; --ink-dim:#5E5647; --hair:#CEC8B6;
+    --accent:#B23016; --accent-deep:#8C2410;
+    --bronze:#8A6A2E; --verdigris:#3E7263; --flood:#356F86; --char:#8A8070;
+  }
+
+  *{box-sizing:border-box;}
+  body{margin:0;}
+  .page{
+    background:var(--ground);
+    color:var(--ink);
+    font-family:var(--font-body);
+    line-height:1.5;
+    min-height:100vh;
+    padding:clamp(18px,4vw,44px);
+    background-image:
+      radial-gradient(120% 80% at 50% -10%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 60%);
+  }
+  .wrap{max-width:1200px;margin:0 auto;}
+
+  /* ---- header ---- */
+  header{border-bottom:1px solid var(--hair);padding-bottom:22px;margin-bottom:26px;}
+  .eyebrow{
+    font-family:var(--font-mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 12px;
+  }
+  h1{
+    font-family:var(--font-display);font-weight:600;
+    font-size:clamp(2.1rem,6vw,3.6rem);line-height:1.02;letter-spacing:.06em;
+    text-transform:uppercase;text-wrap:balance;margin:0;
+    color:var(--ink);
+  }
+  h1 .thin{color:var(--ink-dim);display:block;font-size:.34em;letter-spacing:.24em;margin-top:14px;font-weight:600;}
+  .lede{max-width:66ch;color:var(--ink-dim);margin:16px 0 0;font-size:.98rem;}
+  .lede b{color:var(--ink);font-weight:600;}
+
+  /* ---- layout ---- */
+  .grid{display:grid;grid-template-columns:1fr;gap:26px;}
+  @media (min-width:900px){
+    .grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:30px;align-items:start;}
+    .mapcol{position:sticky;top:20px;}
+  }
+
+  .panel{
+    background:var(--panel);border:1px solid var(--hair);border-radius:12px;
+  }
+  .map-head{
+    display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+    padding:14px 16px 0;
+  }
+  .map-head h2{
+    font-family:var(--font-display);text-transform:uppercase;letter-spacing:.12em;
+    font-size:.82rem;margin:0;color:var(--ink);font-weight:600;
+  }
+  .map-head .coord{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;color:var(--ink-dim);}
+  .map-scroll{overflow-x:auto;padding:6px 8px 8px;}
+  svg#map{width:100%;min-width:660px;height:auto;display:block;}
+
+  .node{cursor:pointer;}
+  .node .box{fill:var(--panel-2);stroke:var(--hair);stroke-width:1.3;}
+  .node .stripe{fill:var(--sc,var(--bronze));}
+  .node .name{fill:var(--ink);font-family:var(--font-display);font-size:11.5px;letter-spacing:.4px;text-transform:uppercase;}
+  .node .scene{fill:var(--ground);font-family:var(--font-mono);font-size:8.5px;font-weight:700;letter-spacing:.06em;}
+  .node .scenebg{fill:var(--sc,var(--bronze));}
+  .node.is-live .box{stroke:var(--sc);}
+  .node:focus{outline:none;}
+  .node:focus .box{stroke:var(--accent);stroke-width:2;}
+  .node .box{transition:stroke .18s ease;}
+
+  .edge{fill:none;}
+  .edge--corridor{stroke:var(--bronze);stroke-width:1.6;opacity:.82;}
+  .edge--ward{stroke:var(--accent);stroke-width:1.9;stroke-dasharray:6 5;}
+  .edge--conduit{stroke:var(--accent);stroke-width:4.4;opacity:.92;filter:url(#glow);}
+  .edge--chokepoint{stroke:var(--bronze);stroke-width:5;stroke-dasharray:9 6;}
+  .edge--flooded{stroke:var(--flood);stroke-width:2.6;stroke-dasharray:2 6;stroke-linecap:round;}
+  .edge--collapsed{stroke:var(--char);stroke-width:2;stroke-dasharray:1 5;opacity:.55;}
+  .edge-label{fill:var(--ink-dim);font-family:var(--font-mono);font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;
+    paint-order:stroke;stroke:var(--panel);stroke-width:3px;stroke-linejoin:round;}
+
+  svg#map.dim .edge{opacity:.1;}
+  svg#map.dim .node{opacity:.34;}
+  svg#map.dim .edge.lit{opacity:1;}
+  svg#map.dim .node.lit{opacity:1;}
+  .node,.edge{transition:opacity .16s ease;}
+
+  /* ---- legend ---- */
+  .legend{border-top:1px solid var(--hair);padding:12px 16px 15px;display:flex;flex-wrap:wrap;gap:14px 20px;}
+  .legend .grp{display:flex;flex-wrap:wrap;gap:9px 14px;align-items:center;}
+  .legend .cap{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);width:100%;margin-bottom:-3px;}
+  .lg{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;color:var(--ink);}
+  .lg svg{display:block;}
+  .swatch{width:12px;height:12px;border-radius:3px;flex:0 0 auto;}
+
+  /* ---- key list ---- */
+  .keyhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:12px;}
+  .keyhead h2{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.1em;font-size:.95rem;margin:0;}
+  .keyhead .hint{font-size:11px;color:var(--ink-dim);}
+  .keys{display:flex;flex-direction:column;gap:10px;}
+  article.area{
+    background:var(--panel);border:1px solid var(--hair);border-radius:11px;padding:13px 15px;
+    scroll-margin-top:16px;transition:border-color .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  article.area:target,article.area.is-selected{
+    border-color:var(--accent);background:var(--panel-2);
+    box-shadow:0 0 0 1px var(--accent), 0 6px 22px -12px color-mix(in srgb,var(--accent) 60%, transparent);
+  }
+  .area-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;cursor:pointer;}
+  .badge{
+    font-family:var(--font-mono);font-weight:700;font-size:12px;
+    width:26px;height:26px;flex:0 0 auto;display:grid;place-items:center;border-radius:7px;
+    background:var(--sc,var(--bronze));color:var(--ground);
+  }
+  .area-name{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.05em;font-size:1rem;margin:0;color:var(--ink);}
+  .scene-pill{
+    font-family:var(--font-mono);font-size:9.5px;font-weight:700;letter-spacing:.08em;
+    padding:3px 7px;border-radius:20px;border:1px solid var(--accent);color:var(--accent);text-transform:uppercase;
+  }
+  .chip{
+    margin-left:auto;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+    padding:3px 9px;border-radius:20px;color:var(--ground);background:var(--sc,var(--bronze));font-weight:700;
+  }
+  .noncombat{
+    display:inline-block;font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--verdigris);border:1px solid color-mix(in srgb,var(--verdigris) 55%, transparent);
+    padding:2px 7px;border-radius:5px;margin-top:9px;
+  }
+  .area p{margin:9px 0 0;font-size:.9rem;color:var(--ink);}
+  .area .meta{margin:8px 0 0;font-size:.83rem;color:var(--ink-dim);}
+  .area .meta b{color:var(--ink);font-weight:600;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;margin-right:2px;}
+
+  /* state token colors */
+  .s-live{--sc:var(--accent);} .s-warded{--sc:var(--accent);} .s-active{--sc:var(--accent);}
+  .s-derelict{--sc:var(--bronze);} .s-collapsed{--sc:var(--char);}
+  .s-flooded{--sc:var(--flood);} .s-sealed{--sc:var(--verdigris);}
+  .s-pocket{--sc:var(--verdigris);} .s-surface{--sc:var(--ink-dim);}
+
+  footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--hair);color:var(--ink-dim);font-size:12px;}
+  footer b{color:var(--ink);}
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;}
+    html{scroll-behavior:auto;}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    html{scroll-behavior:smooth;}
+    .node .box{transition:stroke .18s ease, opacity .16s ease;}
+  }
+</style>
+
+<div class="page">
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Ordnance schematic · recovered</p>
+    <h1>The Ninth Reach<span class="thin">Bael Turath forward command bunker — sealed four centuries</span></h1>
+    <p class="lede">A sprawling command post, gutted by Arkhosian dragon-fire in the War of Ruin and dark ever since. Most of it is dead stone, standing water, and collapse. Only the <b>command spine</b> — War-Room to Conduit Gallery to Throne — still <b>lives</b>, lit by the conduit the Haruspex rides. The eight scenes sit inside this larger ruin; lettered wings are optional and mostly non-combat. <b>Tap any chamber</b> to read its key.</p>
+  </header>
+
+  <div class="grid">
+    <!-- MAP -->
+    <div class="mapcol">
+      <div class="panel">
+        <div class="map-head">
+          <h2>Complex schematic</h2>
+          <span class="coord">SURFACE ↓ THRONE</span>
+        </div>
+        <div class="map-scroll">
+          <svg id="map" viewBox="-140 0 980 700" role="img" aria-label="Node-link schematic of the Ninth Reach bunker, descending from the surface pit to the command throne.">
+            <defs>
+              <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="2.4" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g id="edges"></g>
+            <g id="nodes"></g>
+          </svg>
+        </div>
+        <div class="legend">
+          <div class="grp">
+            <span class="cap">Passages</span>
+            <span class="lg"><svg width="30" height="10"><line x1="1" y1="5" x2="29" y2="5" stroke="var(--bronze)" stroke-width="1.8"/></svg>corridor</span>
+            <span class="lg"><svg width="30" height="10"><line x1="1" y1="5" x2="29" y2="5" stroke="var(--accent)" stroke-width="1.9" stroke-dasharray="6 5"/></svg>warded threshold</span>
+            <span class="lg"><svg width="30" height="10"><line x1="1" y1="5" x2="29" y2="5" stroke="var(--accent)" stroke-width="4.4"/></svg>conduit (live)</span>
+            <span class="lg"><svg width="30" height="10"><line x1="1" y1="5" x2="29" y2="5" stroke="var(--bronze)" stroke-width="5" stroke-dasharray="9 6"/></svg>blast-doors</span>
+            <span class="lg"><svg width="30" height="10"><line x1="1" y1="5" x2="29" y2="5" stroke="var(--flood)" stroke-width="2.6" stroke-dasharray="2 6" stroke-linecap="round"/></svg>flooded crawl</span>
+            <span class="lg"><svg width="30" height="10"><line x1="1" y1="5" x2="29" y2="5" stroke="var(--char)" stroke-width="2" stroke-dasharray="1 5"/></svg>collapsed</span>
+          </div>
+          <div class="grp">
+            <span class="cap">Condition</span>
+            <span class="lg"><span class="swatch" style="background:var(--accent)"></span>live</span>
+            <span class="lg"><span class="swatch" style="background:var(--bronze)"></span>derelict</span>
+            <span class="lg"><span class="swatch" style="background:var(--char)"></span>collapsed</span>
+            <span class="lg"><span class="swatch" style="background:var(--flood)"></span>flooded</span>
+            <span class="lg"><span class="swatch" style="background:var(--verdigris)"></span>sealed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY -->
+    <div class="keycol">
+      <div class="keyhead">
+        <h2>Area key</h2>
+        <span class="hint">◇ = non-combat</span>
+      </div>
+      <div class="keys" id="keys">
+
+        <article class="area s-derelict" id="area-OW" data-key="OW">
+          <div class="area-top"><span class="badge">◆</span><h3 class="area-name">Gray Ridge Open Works</h3><span class="scene-pill">Scene 3</span><span class="chip">surface</span></div>
+          <p>The mundane pithead and marble dig — where the whole thing started. Timber cranes, ore-cart rails, the open sky.</p>
+          <p class="meta"><b>Exits</b> Down the Deep Gallery.</p>
+        </article>
+
+        <article class="area s-derelict" id="area-1" data-key="1">
+          <div class="area-top"><span class="badge">1</span><h3 class="area-name">The Deep Gallery</h3><span class="chip">derelict</span></div>
+          <p>Timber-shored mine adit driven down the marble seam until it struck the black Turathi wall. The descent from the living world into the ruin.</p>
+          <p class="meta"><b>State</b> Unstable shoring. <b>Exits</b> Up to the Open Works; down to the Breach.</p>
+        </article>
+
+        <article class="area s-warded" id="area-2" data-key="2">
+          <div class="area-top"><span class="badge">2</span><h3 class="area-name">The Breach &amp; Guard Antechamber</h3><span class="scene-pill">Scene 4</span><span class="chip">warded</span></div>
+          <p>Where clean white marble is smashed through into black, fire-glazed Turathi masonry — a carved infernal lintel, the dormant <b>ward-line</b> on the threshold, and the Lictor at work beyond it.</p>
+          <p class="meta"><b>State</b> Fracture point, warded. <b>Exits</b> Up the gallery; ward-line into the War-Room; a corridor to the Barracks; the concourse opens onto the Crater.</p>
+        </article>
+
+        <article class="area s-derelict" id="area-A" data-key="A">
+          <div class="area-top"><span class="badge">A</span><h3 class="area-name">Garrison Barracks</h3><span class="chip">derelict</span></div>
+          <p>Rows of bunks under four centuries of undisturbed dust; a dead legionary's kit still folded, an unsent letter home. Intact, but long dead.</p>
+          <p class="meta"><b>State</b> Derelict. <b>Exits</b> The Breach concourse; a caved passage toward the Crater.</p>
+          <span class="noncombat">◇ non-combat — lore: who the Ninth Reach's men were, and that they were sealed in alive; minor period loot</span>
+        </article>
+
+        <article class="area s-collapsed" id="area-B" data-key="B">
+          <div class="area-top"><span class="badge">B</span><h3 class="area-name">War-of-Ruin Crater</h3><span class="chip">collapsed</span></div>
+          <p>A whole wing sheared open by Arkhosian dragon-fire, its floor gone to a black chasm — the wound that killed the post. Mostly a dead-end that sells the scale of the disaster.</p>
+          <p class="meta"><b>State</b> Collapsed / impassable. <b>Exits</b> Barracks &amp; Breach concourse; across the chasm (roped, DC 14 Athletics) a sealed vault-cell few tables ever open.</p>
+          <span class="noncombat">◇ non-combat — an awe/dread vista of the War of Ruin</span>
+        </article>
+
+        <article class="area s-live" id="area-5" data-key="5">
+          <div class="area-top"><span class="badge">5</span><h3 class="area-name">The War-Room</h3><span class="scene-pill">Scene 5</span><span class="chip">live</span></div>
+          <p>The decayed mind itself: a great cast-bronze relief-map of the Vale, walls of Infernal standing-orders, murder-holes, barred cells. The hub, and the most "alive" room in the complex — the Voice owns it.</p>
+          <p class="meta"><b>State</b> Live. <b>Exits</b> Ward-line back to the Breach; the cells; the Auspices Chamber; side-tunnels to the Doubting Clutch; a stair down to the Flooded Sublevel; the conduit gallery rising to the Muster.</p>
+        </article>
+
+        <article class="area s-live" id="area-cells" data-key="cells">
+          <div class="area-top"><span class="badge">✚</span><h3 class="area-name">Holding Cells</h3><span class="chip">live</span></div>
+          <p>Barred cells off the War-Room holding the surviving trapped cutters — this is where the rescue actually happens. Loud to open, but it's the point.</p>
+          <p class="meta"><b>Exits</b> Off the War-Room.</p>
+        </article>
+
+        <article class="area s-derelict" id="area-C" data-key="C">
+          <div class="area-top"><span class="badge">C</span><h3 class="area-name">Auspices Chamber</h3><span class="chip">derelict</span></div>
+          <p>The Haruspex's sanctum-annex: a dry scrying-basin, omen-bronze, entrail-charts of a war long lost. Cracked and seeping, but readable.</p>
+          <p class="meta"><b>State</b> Cracked, seeping. <b>Exits</b> Off the War-Room.</p>
+          <span class="noncombat">◇ non-combat — reading the omen-bronze (DC 14 Arcana/Religion, or any Infernal reader) yields the exact FORM of a relief-of-post order → a direct key to the stand-down</span>
+        </article>
+
+        <article class="area s-pocket" id="area-6" data-key="6">
+          <div class="area-top"><span class="badge">6</span><h3 class="area-name">The Doubting Clutch</h3><span class="scene-pill">Scene 6</span><span class="chip">dead pocket</span></div>
+          <p>A side-gallery where the conduit is broken and the Voice guts to static — which is exactly why Ssvara's frightened clutch shelters here. A fissure lets in a thread of outside air.</p>
+          <p class="meta"><b>State</b> Broken conduit (safe pocket). <b>Exits</b> Side-tunnels from the War-Room; a fissure to the SURFACE (the Voice dies outside — an escape, and where the hatchlings are walked out); on to the Muster approach.</p>
+          <span class="noncombat">◇ non-combat — the parley; the key weakness handed over</span>
+        </article>
+
+        <article class="area s-flooded" id="area-D" data-key="D">
+          <div class="area-top"><span class="badge">D</span><h3 class="area-name">Flooded Sublevel</h3><span class="chip">flooded</span></div>
+          <p>Drowned storerooms and the garrison cistern below the War-Room; cold, black, waist-to-neck deep. Centuries of groundwater have claimed it.</p>
+          <p class="meta"><b>State</b> Flooded. <b>Exits</b> Stair down from the War-Room; a submerged crawl that flanks into the Muster past a blast-door (hold-breath, DC 13).</p>
+          <span class="noncombat">◇ non-combat — salvage; the draft and current prove the surface is close</span>
+        </article>
+
+        <article class="area s-live" id="area-7" data-key="7">
+          <div class="area-top"><span class="badge">7</span><h3 class="area-name">The Conduit Gallery — The Muster</h3><span class="scene-pill">Scene 7</span><span class="chip">live</span></div>
+          <p>The rising fortified spine: a central <b>conduit junction</b> on a defensible platform, two heavy <b>blast-doors</b>, and flanking maintenance crawls and a half-collapsed stope offering ways around the killbox. Cut the junction to cripple the boss; trap the Lictor between the doors to end it.</p>
+          <p class="meta"><b>State</b> Live (collapse at the edges). <b>Exits</b> From the War-Room, the Dead Pocket, or the Flooded crawl; the Arc-Forge opens off it; blast-doors up to the Throne.</p>
+        </article>
+
+        <article class="area s-active" id="area-11" data-key="11">
+          <div class="area-top"><span class="badge">11</span><h3 class="area-name">The Arc-Forge</h3><span class="chip">active</span></div>
+          <p>The conduit-forge where captives are killed and raised as labor-dead — roaring heat and lashing arcs of infernal current.</p>
+          <p class="meta"><b>State</b> Live / active. <b>Exits</b> Off the Conduit Gallery. <b>Use</b> A terminal hazard — pitch the Lictor in here to stop it for good.</p>
+        </article>
+
+        <article class="area s-sealed" id="area-E" data-key="E">
+          <div class="area-top"><span class="badge">E</span><h3 class="area-name">The Legate's Quarters</h3><span class="chip">sealed</span></div>
+          <p>The dead commander's sealed rooms off the throne approach; his mummified remains still at his desk, his <b>command-seal</b> and a sealed <b>dispatch-cylinder</b> beside him. Undisturbed since the sealing.</p>
+          <p class="meta"><b>State</b> Sealed tomb. <b>Exits</b> Off the throne approach.</p>
+          <span class="noncombat">◇ non-combat — genuine AUTHORITY for the stand-down (his seal beats a forgery), the form/counter-sign in his papers, and the sequel hook</span>
+        </article>
+
+        <article class="area s-live" id="area-8" data-key="8">
+          <div class="area-top"><span class="badge">8</span><h3 class="area-name">The Command Throne</h3><span class="scene-pill">Scene 8</span><span class="chip">live</span></div>
+          <p>The domed command chamber; the Haruspex fused to a bronze throne over a lower map-pit of the whole front, the half-made Centurion at its side. The heart of the ruin — and the finale.</p>
+          <p class="meta"><b>State</b> Live (the heart). <b>Exits</b> Up from the Muster; the Legate's Quarters and the Reliquary open off it.</p>
+        </article>
+
+        <article class="area s-sealed" id="area-14" data-key="14">
+          <div class="area-top"><span class="badge">14</span><h3 class="area-name">The Reliquary</h3><span class="chip">sealed</span></div>
+          <p>The strongroom behind the throne — the Ninth Reach hoard: cart-loads of heavy bronze wealth, infernal-cut gems, and officer's gear.</p>
+          <p class="meta"><b>State</b> Sealed. <b>Exits</b> Off the Throne.</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <b>The Quarry That Woke Up</b> · GM reference. The command spine (War-Room → Muster → Throne) is the only route that must be run; every lettered wing is optional colour, atmosphere, or a stand-down key. Impassable/flooded wings are marked so the ruin feels vast without eating the session.
+  </footer>
+</div>
+</div>
+
+<script>
+(function(){
+  var nodes = [
+    {key:"OW", name:"GRAY RIDGE OPEN WORKS", scene:"S3", state:"derelict", x:350, y:40, w:250},
+    {key:"1",  name:"THE DEEP GALLERY",      scene:"",   state:"derelict", x:350, y:116, w:180},
+    {key:"2",  name:"THE BREACH",            scene:"S4", state:"warded",   x:350, y:196, w:180},
+    {key:"A",  name:"GARRISON BARRACKS",     scene:"",   state:"derelict", x:90,  y:196, w:180},
+    {key:"B",  name:"WAR-OF-RUIN CRATER",    scene:"",   state:"collapsed",x:610, y:196, w:180},
+    {key:"5",  name:"THE WAR-ROOM",          scene:"S5", state:"live",     x:350, y:300, w:180},
+    {key:"cells",name:"HOLDING CELLS",       scene:"",   state:"live",     x:610, y:300, w:170},
+    {key:"C",  name:"AUSPICES CHAMBER",      scene:"",   state:"derelict", x:90,  y:300, w:180},
+    {key:"6",  name:"DOUBTING CLUTCH",       scene:"S6", state:"pocket",   x:90,  y:404, w:180},
+    {key:"D",  name:"FLOODED SUBLEVEL",      scene:"",   state:"flooded",  x:610, y:404, w:180},
+    {key:"7",  name:"THE MUSTER",            scene:"S7", state:"live",     x:350, y:498, w:180},
+    {key:"11", name:"THE ARC-FORGE",         scene:"",   state:"active",   x:610, y:498, w:180},
+    {key:"E",  name:"LEGATE'S QUARTERS",     scene:"",   state:"sealed",   x:90,  y:610, w:180},
+    {key:"8",  name:"THE COMMAND THRONE",    scene:"S8", state:"live",     x:350, y:610, w:180},
+    {key:"14", name:"THE RELIQUARY",         scene:"",   state:"sealed",   x:610, y:610, w:170},
+    {key:"SURF",name:"↑ SURFACE",            scene:"",   state:"surface",  x:-60, y:404, w:120, small:true}
+  ];
+  var edges = [
+    {a:"OW",b:"1",t:"corridor"},
+    {a:"1",b:"2",t:"corridor"},
+    {a:"2",b:"A",t:"corridor"},
+    {a:"2",b:"B",t:"collapsed",label:"collapsed"},
+    {a:"A",b:"B",t:"collapsed"},
+    {a:"2",b:"5",t:"ward",label:"ward-line"},
+    {a:"5",b:"cells",t:"corridor"},
+    {a:"5",b:"C",t:"corridor"},
+    {a:"5",b:"6",t:"corridor"},
+    {a:"5",b:"D",t:"flooded",label:"stair"},
+    {a:"5",b:"7",t:"conduit",label:"conduit gallery"},
+    {a:"6",b:"7",t:"corridor"},
+    {a:"D",b:"7",t:"flooded",label:"flooded crawl"},
+    {a:"6",b:"SURF",t:"ward",label:"fissure"},
+    {a:"7",b:"11",t:"corridor"},
+    {a:"7",b:"8",t:"chokepoint",label:"blast-doors"},
+    {a:"8",b:"E",t:"corridor"},
+    {a:"8",b:"14",t:"corridor"}
+  ];
+
+  var H = 46, Hs = 40, SVGNS="http://www.w3.org/2000/svg";
+  var byKey = {};
+  nodes.forEach(function(n){ n.h = n.small ? Hs : H; byKey[n.key]=n; });
+
+  function borderPoint(n, tx, ty){
+    var dx = tx - n.x, dy = ty - n.y;
+    if(dx===0 && dy===0) return {x:n.x,y:n.y};
+    var hw = n.w/2, hh = n.h/2;
+    var sx = dx!==0 ? hw/Math.abs(dx) : Infinity;
+    var sy = dy!==0 ? hh/Math.abs(dy) : Infinity;
+    var s = Math.min(sx, sy);
+    return {x:n.x + dx*s, y:n.y + dy*s};
+  }
+  function el(tag, attrs){
+    var e = document.createElementNS(SVGNS, tag);
+    for(var k in attrs){ e.setAttribute(k, attrs[k]); }
+    return e;
+  }
+
+  var edgeLayer = document.getElementById("edges");
+  var nodeLayer = document.getElementById("nodes");
+  var edgeEls = [];
+
+  edges.forEach(function(ed){
+    var A = byKey[ed.a], B = byKey[ed.b];
+    if(!A || !B) return;
+    var p1 = borderPoint(A, B.x, B.y), p2 = borderPoint(B, A.x, A.y);
+    var line = el("line", {x1:p1.x, y1:p1.y, x2:p2.x, y2:p2.y, "class":"edge edge--"+ed.t});
+    line.dataset.a = ed.a; line.dataset.b = ed.b;
+    edgeLayer.appendChild(line);
+    edgeEls.push(line);
+    if(ed.label){
+      var mx = (p1.x+p2.x)/2, my = (p1.y+p2.y)/2;
+      var tx = el("text", {x:mx, y:my-3, "text-anchor":"middle", "class":"edge-label"});
+      tx.textContent = ed.label;
+      edgeLayer.appendChild(tx);
+    }
+  });
+
+  var nodeEls = {};
+  nodes.forEach(function(n){
+    var g = el("g", {"class":"node s-"+n.state+(n.state==="live"||n.state==="active"?" is-live":""),
+      tabindex:"0", role:"button", transform:"translate("+n.x+","+n.y+")",
+      "aria-label":"Area "+(n.key==="SURF"?"surface":n.key)+", "+n.name.replace("↑ ","")});
+    var left = -n.w/2, top = -n.h/2;
+    g.appendChild(el("rect", {x:left, y:top, width:n.w, height:n.h, rx:9, "class":"box"}));
+    g.appendChild(el("rect", {x:left, y:top, width:6, height:n.h, rx:3, "class":"stripe"}));
+    var name = el("text", {x:6, y: n.scene?-1:4, "text-anchor":"middle", "class":"name"});
+    name.textContent = n.name;
+    g.appendChild(name);
+    if(n.scene){
+      var pw = 26, ph = 13, px = n.w/2 - pw - 8, py = top + n.h - ph - 5;
+      g.appendChild(el("rect", {x:px, y:py, width:pw, height:ph, rx:6.5, "class":"scenebg"}));
+      var st = el("text", {x:px+pw/2, y:py+ph-3.5, "text-anchor":"middle", "class":"scene"});
+      st.textContent = n.scene;
+      g.appendChild(st);
+    }
+    nodeLayer.appendChild(g);
+    nodeEls[n.key] = g;
+
+    if(n.key !== "SURF"){
+      g.addEventListener("click", function(){ select(n.key); });
+      g.addEventListener("keydown", function(e){
+        if(e.key==="Enter" || e.key===" "){ e.preventDefault(); select(n.key); }
+      });
+    }
+    g.addEventListener("mouseenter", function(){ emphasize(n.key); });
+    g.addEventListener("mouseleave", clearEmph);
+    g.addEventListener("focus", function(){ emphasize(n.key); });
+    g.addEventListener("blur", clearEmph);
+  });
+
+  var svg = document.getElementById("map");
+  var neighbors = {};
+  edges.forEach(function(ed){
+    (neighbors[ed.a] = neighbors[ed.a]||[]).push(ed.b);
+    (neighbors[ed.b] = neighbors[ed.b]||[]).push(ed.a);
+  });
+
+  function emphasize(key){
+    svg.classList.add("dim");
+    edgeEls.forEach(function(l){
+      if(l.dataset.a===key || l.dataset.b===key) l.classList.add("lit");
+    });
+    if(nodeEls[key]) nodeEls[key].classList.add("lit");
+    (neighbors[key]||[]).forEach(function(nk){ if(nodeEls[nk]) nodeEls[nk].classList.add("lit"); });
+  }
+  function clearEmph(){
+    svg.classList.remove("dim");
+    edgeEls.forEach(function(l){ l.classList.remove("lit"); });
+    for(var k in nodeEls) nodeEls[k].classList.remove("lit");
+  }
+
+  var articles = document.querySelectorAll("article.area");
+  function select(key){
+    articles.forEach(function(a){ a.classList.toggle("is-selected", a.dataset.key===key); });
+    var art = document.getElementById("area-"+key);
+    if(art) art.scrollIntoView({block:"nearest", behavior:"smooth"});
+  }
+
+  articles.forEach(function(a){
+    a.querySelector(".area-top").addEventListener("click", function(){
+      select(a.dataset.key);
+      var g = nodeEls[a.dataset.key];
+      if(g){ emphasize(a.dataset.key); setTimeout(clearEmph, 900); }
+    });
+  });
+})();
+</script>
